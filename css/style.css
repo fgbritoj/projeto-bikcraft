@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
 :root {
     --c12: #000000;
     --c11: #111111;
@@ -37,7 +39,10 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
 }
 
 .header {
@@ -84,13 +89,21 @@
 .descricao {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    position: relative;
     background-color: var(--c12);   
 }
 
 .descricao-texto {
     display: flex;
     flex-direction: column;
+    position: relative;
+    justify-content: center;
+    padding: 0 80px;
+}
+
+.descricao-texto-detalhe {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
 }
 
 .descricao-texto h1 {
@@ -99,8 +112,27 @@
 
 .descricao-texto p {
     color: var(--c5);
+    margin-bottom: 20px;
 }
 
-.descricao-img {
-    max-width: 640px;
+.descricao-img img {
+    max-width: 100%;
+    display: block;
+}
+
+.descricao-texto h1 {
+    margin-bottom: 20px;
+}
+
+.descricao-texto h1::after {
+    content: '.';
+    color: var(--p1);
+}
+
+.descricao-texto a {
+    text-decoration: none;
+    color: var(--p5);
+    background-color: var(--p2);
+    padding: 8px 16px;
+    border-radius: 5px;
 }
