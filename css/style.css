@@ -1,0 +1,106 @@
+:root {
+    --c12: #000000;
+    --c11: #111111;
+    --c10: #2e2e2e;
+    --c9:  #404040;
+    --c8:  #595959;
+    --c7:  #717171;
+    --c6:  #9C9C9C;
+    --c5:  #B2B2B2;
+    --c4:  #CCCCCC;
+    --c3:  #DEDEDE;
+    --c2:  #EDEDED;
+    --c1:  #F7F7F7;
+    --w:   #FFFFFF;
+
+    --p5: #332200;
+    --p4: #664400;
+    --p3: #A66F00;
+    --p2: #E4A30B;
+    --p1: #FFBB00;
+
+    /* --font-1-xxl:   "Poppins 600 64/72";
+    --font-1-xl:    "Poppins 600 32/40";
+    --font-1-l:     "Poppins 400 24/36";
+    --font-2-l:     "Roboto 400 24/36";
+    --font-2-l-b:   "ROBOTO 500 24/36 1.5% ALLCAPS";
+    --font-1-m:     "Poppins 400 18/24";
+    --font-1-m-b:   "Poppins 600 18/24";
+    --font-2-m:     "Roboto 500 18/24;"
+    --font-1-s:     "Poppins 400 16/24";
+    --font-2-s:     "Roboto 400 16/24";
+    --font-2-xs:    "Roboto 400 14/20";
+    --font-1-xs:    "Poppins 600 12/16"; */
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    gap: 20px;
+    background-color: var(--c12);
+}
+
+.header-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style: none;
+}
+
+.header-menu ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--w);
+    padding: 16px 0;
+    font-size: 1.125rem;
+    position: relative;
+}
+
+.header-menu ul li a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    background-color: var(--w);
+    margin-top: 4px;
+    transition: 0.3s;
+}
+
+.header-menu ul li a:hover::after {
+    width: 100%;
+}
+
+.descricao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    background-color: var(--c12);   
+}
+
+.descricao-texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.descricao-texto h1 {
+    color: var(--w);
+}
+
+.descricao-texto p {
+    color: var(--c5);
+}
+
+.descricao-img {
+    max-width: 640px;
+}
