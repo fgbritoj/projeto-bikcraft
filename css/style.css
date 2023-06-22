@@ -21,18 +21,6 @@
     --p2: #E4A30B;
     --p1: #FFBB00;
 
-    /* --font-1-xxl:   "Poppins 600 64/72";
-    --font-1-xl:    "Poppins 600 32/40";
-    --font-1-l:     "Poppins 400 24/36";
-    --font-2-l:     "Roboto 400 24/36";
-    --font-2-l-b:   "ROBOTO 500 24/36 1.5% ALLCAPS";
-    --font-1-m:     "Poppins 400 18/24";
-    --font-1-m-b:   "Poppins 600 18/24";
-    --font-2-m:     "Roboto 500 18/24;"
-    --font-1-s:     "Poppins 400 16/24";
-    --font-2-s:     "Roboto 400 16/24";
-    --font-2-xs:    "Roboto 400 14/20";
-    --font-1-xs:    "Poppins 600 12/16"; */
 }
 
 * {
@@ -86,11 +74,30 @@ body {
     width: 100%;
 }
 
+@media (max-width: 900px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .header-menu ul li a {
+        background-color: var(--c10);
+        padding: 8px 16px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    .header-menu ul li a::after {
+        display: none;
+    }
+}
+
+
 .descricao {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: var(--c12);   
+    justify-content: center;
 }
+
 
 .descricao-texto {
     display: flex;
@@ -118,6 +125,23 @@ body {
 .descricao-img img {
     max-width: 100%;
     display: block;
+}
+
+@media (min-width: 1200px) {
+    .descricao-img img {
+        max-width: 596px;
+    }
+
+    .descricao-texto {
+        max-width: 60ch;
+        justify-self: end;
+        position: initial;
+    }
+
+    .descricao-texto-detalhe {
+        top: 765px;
+        left: 1.5%;
+    }
 }
 
 .descricao-texto h1 {
