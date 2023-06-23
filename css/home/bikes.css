@@ -1,0 +1,21 @@
+.bikes > h1 {
+    font-size: 2.2rem;
+    margin-left:  80px;
+    margin-bottom: 20px;
+}
+
+.bikes > h1 > span {
+    color: var(--p1);
+}
+
+.carrosel {
+    display: flex;
+    flex-direction: row;
+    padding: 0 40px;
+    gap: 20px;
+}
+
+.carrosel-item-img {
+    max-width: 100%;
+    border-radius: 4px;
+}
