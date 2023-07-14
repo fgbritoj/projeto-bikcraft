@@ -1,11 +1,26 @@
 .bikes > h1 {
-    font-size: 2.2rem;
     margin-left:  80px;
     margin-bottom: 20px;
 }
 
-.bikes > h1 > span {
+.bikes h2 > span {
+    display: inline-block;
     color: var(--p1);
+}
+
+.bikes h2 {
+    position: relative;
+    margin-left: 20px;
+}
+
+.bikes h2::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 10px;
+    background-color: var(--p1);
+    left: -20px;
+    top: 12px;
 }
 
 .carrosel {
