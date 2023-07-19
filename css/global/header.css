@@ -18,9 +18,7 @@
 .header-menu ul li a {
     display: inline-block;
     text-decoration: none;
-    color: var(--w);
     padding: 16px 0;
-    font-size: 1.125rem;
     position: relative;
 }
 

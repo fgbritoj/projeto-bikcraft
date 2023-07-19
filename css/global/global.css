@@ -4,6 +4,6 @@
     margin: 0;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
+img[src$=".jpg"] {
+    border-radius: 4px;
 }
