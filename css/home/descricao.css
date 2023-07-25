@@ -1,15 +1,18 @@
+.descricao-bg {
+    background-color: var(--c12);
+    box-shadow: inset 0 -120px var(--w);
+}
+
 .descricao {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: var(--c12);   
     justify-content: center;
-    box-shadow: inset 0 -120px var(--w);
     margin-bottom: 100px;
 }
 
 .descricao-texto {
-    align-self: end;
     position: relative;
+    align-self: end;
     padding: 0 80px 200px 0;
 }
 

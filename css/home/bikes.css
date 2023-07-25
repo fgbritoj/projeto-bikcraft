@@ -1,8 +1,3 @@
-.bikes {
-    padding-top: 60px;
-    padding-bottom: 120px;
-}
-
 .carrosel {
     display: flex;
     max-width: 1400px;
@@ -14,7 +9,7 @@
 }
 
 .carrosel div {
-    min-width: 300px;
+    min-width: 280px;
 }
 
 .carrosel-item-img {
@@ -22,15 +17,14 @@
     margin-bottom: 12px;
 }
 
-.bikes > h1 {
-    margin-left:  80px;
+.bikes h1 {
     margin-bottom: 40px;
 }
 
-/* .bikes h2 {
+.bikes h2 {
     display: flex;
     align-items: center;
-} */
+}
 
 .carrosel-item h2::before {
     content: "";
@@ -39,11 +33,11 @@
     display: inline-block;
     background-color: var(--p1);
     margin-right: 8px;
+    transition: width 0.2s;
 }
 
-.carrosel a:hover h2::before {
+.carrosel a:hover + h2::before {
     width: 24px;
-    background-color: aqua;
 }
 
 .carrosel-item span {
