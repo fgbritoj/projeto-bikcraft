@@ -1,13 +1,20 @@
-.carrosel {
-    display: flex;
-    flex-direction: row;
-    padding: 0 40px;
-    gap: 40px;
+.bikes {
+    padding-top: 60px;
+    padding-bottom: 120px;
 }
 
-.carrosel-item{
-    min-width: 280px;
-    overflow-x: auto;
+.carrosel {
+    display: flex;
+    max-width: 1400px;
+    gap: 40px;
+    padding: 0 20px;
+    margin-left: auto;
+    margin-right: auto;    
+    overflow: auto;
+}
+
+.carrosel div {
+    min-width: 300px;
 }
 
 .carrosel-item-img {
@@ -20,18 +27,23 @@
     margin-bottom: 40px;
 }
 
-.bikes h2 {
+/* .bikes h2 {
     display: flex;
     align-items: center;
-}
+} */
 
-.bikes h2::before {
+.carrosel-item h2::before {
     content: "";
     width: 15px;
     height: 10px;
     display: inline-block;
     background-color: var(--p1);
     margin-right: 8px;
+}
+
+.carrosel a:hover h2::before {
+    width: 24px;
+    background-color: aqua;
 }
 
 .carrosel-item span {
