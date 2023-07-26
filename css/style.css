@@ -7,6 +7,10 @@
 /* Home */
 @import "./home/descricao.css";
 @import "./home/bikes.css";
+@import "./home/tecnologia.css";
+@import "./home/parceiros.css";
+@import "./home/depoimento.css";
 
 /* Utilidades */
 @import "./utilidades/componentes.css";
+@import "./utilidades/medidas.css";

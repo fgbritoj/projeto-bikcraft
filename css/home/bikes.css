@@ -1,3 +1,7 @@
+.bikes {
+    margin-bottom: 60px;
+}
+
 .carrosel {
     display: flex;
     max-width: 1400px;

@@ -1,0 +1,14 @@
+.depoimento {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.depoimento-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--p1);
+}
+
+.depoimento-img {
+}
