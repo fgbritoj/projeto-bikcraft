@@ -1,0 +1,8 @@
+.rodape {
+    background-color: var(--c12);
+    padding: 60px 0px;
+}
+
+.footer {
+    display: flex;
+}

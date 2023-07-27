@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap');
+
 .font-1-xxl {
     font: 600 4rem/1.125 "Poppins", sans-serif;
 }
@@ -51,6 +53,10 @@
     font: 600 0.75rem/1.35 "Poppins", sans-serif;
 }
 
+.font-3-i {
+    font: 600 2.25rem/1.35 "Merriweather", sans-serif;
+}
+
 @media (max-width: 1200px) {
     .font-1-xxl {
         font-size: 3rem;
@@ -60,6 +66,10 @@
     .font-2-l-b {
         font-size: 1.25rem;
     }
+
+    .font-3-i {
+        font-size: 1.75rem;
+    }
 } 
 
 @media (max-width: 800px) {
@@ -68,6 +78,10 @@
     }
 
     .font-1-xl {
+        font-size: 1.5rem;
+    }
+
+    .font-3-i {
         font-size: 1.5rem;
     }
 }

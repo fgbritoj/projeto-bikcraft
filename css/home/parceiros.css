@@ -29,3 +29,32 @@
 .parceiros-links img {
     margin: auto;
 }
+
+@media (max-width: 800px) {
+    .parceiros {
+        padding-top: 40px;
+    }
+
+    .parceiros-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .parceiros-links div:nth-child(n + 3) {
+        border-top: 2px solid var(--c2);
+    }
+
+    .parceiros-links div:nth-child(odd) {
+        border-left: none;
+    }
+    
+}
+
+@media (max-width: 1200px) {
+    .parceiros-links div {
+        padding: 20px;
+    }
+
+    .parceiros-links img {
+        max-width: 80%;
+    }
+}

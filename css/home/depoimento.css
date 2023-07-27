@@ -1,14 +1,70 @@
 .depoimento {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background-color: var(--p1);
+    overflow: hidden;
 }
 
 .depoimento-texto {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    background-color: var(--p1);
+    padding: 40px 40px 80px 80px;
+    align-self: end;
 }
 
-.depoimento-img {
+.depoimento-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0px;
+}
+
+.depoimento-texto p {
+    position: relative;
+    max-width: 32ch;
+}
+
+.depoimento-texto p::before {
+    content: '“';
+    position: absolute;
+    font-size: 5rem;
+    color: var(--p2);
+    left: -50px;
+    top: -20px;
+}
+
+.depoimento-texto p::after {
+    content: '”';
+    position: absolute;
+    font-size: 5rem;
+    color: var(--p2);
+
+}
+
+@media (max-width: 800px) {
+    .depoimento-texto p::before,
+    .depoimento-texto p::after {
+        font-size: 2rem;
+    }
+
+    .depoimento {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .depoimento-img img {
+        max-height: 300px;
+    }
+
+    .depoimento-texto {
+        padding: 40px 20px;
+        justify-self: center;
+    }
+}
+
+@media (max-width: 1200px) {
+    .depoimento-texto p::before,
+    .depoimento-texto p::after {
+        font-size: 4rem;
+    }
 }
