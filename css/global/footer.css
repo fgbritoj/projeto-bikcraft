@@ -1,0 +1,44 @@
+.footer-bg {
+    background-color: var(--c12);
+    padding: 60px 0px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-contato li,
+.footer-informacoes li {
+    list-style: none;
+}
+
+.footer-contato a,
+.footer-informacoes a {
+    color: var(--c6);
+    text-decoration: none;
+}
+
+.footer-contato li:nth-child(even) {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.footer-contato li:nth-child(even)::after {    
+    content: "";
+    display: block;
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    background-color: var(--c11);
+    top: 30px;
+}
+
+.footer-informacoes li {
+    margin-bottom: 10px;
+}
+
+.footer-redes {
+    display: flex;
+    gap: 20px;
+}

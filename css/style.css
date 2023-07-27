@@ -1,8 +1,11 @@
 /* Global */
 @import "./global/global.css";
+
 @import "./utilidades/tipografia.css";
 @import "./utilidades/cores.css";
+
 @import "./global/header.css";
+@import "./global/footer.css";
 
 /* Home */
 @import "./home/descricao.css";
@@ -11,7 +14,6 @@
 @import "./home/parceiros.css";
 @import "./home/depoimento.css";
 @import "./home/seguros.css";
-@import "./home/footer.css";
 
 /* Utilidades */
 @import "./utilidades/componentes.css";
