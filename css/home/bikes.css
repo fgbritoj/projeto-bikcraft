@@ -30,6 +30,10 @@
     align-items: center;
 }
 
+.carrosel a {
+    text-decoration: none;
+}
+
 .carrosel-item h2::before {
     content: "";
     width: 15px;
@@ -40,7 +44,7 @@
     transition: width 0.2s;
 }
 
-.carrosel a:hover + h2::before {
+.carrosel a:hover > h2::before {
     width: 24px;
 }
 

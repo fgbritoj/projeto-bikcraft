@@ -50,11 +50,22 @@
 }
 
 @media (max-width: 1200px) {
+    .parceiros {
+        padding-top: 20px;
+    }
+
     .parceiros-links div {
         padding: 20px;
     }
 
     .parceiros-links img {
         max-width: 80%;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .parceiros {
+        margin-bottom: 60px;
     }
 }
