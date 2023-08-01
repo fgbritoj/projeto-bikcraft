@@ -55,3 +55,16 @@
     height: 2px;
     background-color: currentColor;
 }
+
+.titulo-bg {
+    background-color: var(--c11);
+    padding: 40px 0;
+}
+
+@media (max-width: 800px) {
+    .titulo p {
+        text-transform: lowercase;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}

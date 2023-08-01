@@ -18,3 +18,9 @@
 /* Utilidades */
 @import "./utilidades/componentes.css";
 @import "./utilidades/medidas.css";
+
+/* Termos */
+@import "./termos/termos.css";
+
+/* Bicicletas */
+@import "./bicicletas/bicicletas.css";
