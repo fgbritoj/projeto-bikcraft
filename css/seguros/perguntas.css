@@ -1,0 +1,46 @@
+.seguros-perguntas {
+    padding: 80px 20px;
+}
+
+.seguros-perguntas dl:nth-child(even) {
+    background-color: var(--c1);
+}
+
+.seguros-perguntas h1 {
+    margin-bottom: 80px;
+}
+
+.seguros-perguntas dl div {
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.seguros-perguntas dt {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.seguros-perguntas dd {
+    padding-left: 20px;
+    padding-top: 20px;
+    max-width: 80ch;
+}
+
+.seguros-perguntas dt::before {
+    content: "";
+    display: inline-block;
+    height: 8px;
+    width: 12px;
+    background-color: var(--p1);
+}
+
+.seguros-perguntas dt::after {
+    content: "";
+    display: inline-block;
+    height: 6px;
+    width: 14px;
+    background: url(../../img/icones/seta-abrir.svg) no-repeat;
+}

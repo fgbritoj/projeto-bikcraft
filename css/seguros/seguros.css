@@ -75,14 +75,3 @@
         justify-self: center;
     }
 }
-
-.seguros-vantagens-bg {
-    background-color: var(--c12);
-    padding: 80px 0;
-}
-
-.seguros-vantagens-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-}
