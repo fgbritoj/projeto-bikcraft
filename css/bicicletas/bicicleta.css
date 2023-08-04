@@ -1,0 +1,90 @@
+.bicicleta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bicicleta-imagens {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.bicicleta-imagens > div {
+    display: flex;
+    flex-direction: row;
+    max-width: max-content;
+}
+
+.bicicleta-imagens img {
+    max-width: 596px;
+    display: block;
+}
+
+.bicicleta-conteudo {
+    padding: 0px 40px;
+}
+
+.bicicleta-comprar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bicicleta-comprar > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4px;
+}
+
+.bicicleta-comprar a {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.bicicleta-comprar span {
+    display: flex;
+    background-color: var(--c12);
+    border-radius: 4px;
+    padding: 4px 8px;
+    gap: 5px;
+    max-width: max-content;
+}
+
+.bicicleta-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, max-content));
+    background-color: var(--c12);
+    border-radius: 4px;
+    padding: 40px;
+    gap: 20px;
+}
+
+.bicicleta-info img {
+    width: 24px;
+}
+
+.bicicleta-ficha {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--c12);
+    padding: 40px;
+    border-radius: 4px;
+}
+
+.bicicleta-ficha p {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+}
+
+.bicicleta-ficha p + p {
+    border-top: 1px solid var(--c11);
+    padding-top: 10px;
+}
+
+@media (max-width: 1200px) {
+    .bicicleta-imagens img {
+        max-width: 100%;
+    }
+}
