@@ -2,6 +2,14 @@
     text-transform: uppercase;
 }
 
+#bicicleta .bikes .carrosel {
+    padding: 0;
+}
+
+#bicicleta .bikes {
+    padding: 40px 0;
+}
+
 .bicicleta {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -83,6 +91,37 @@
 .bicicleta-ficha p + p {
     border-top: 1px solid var(--c11);
     padding-top: 10px;
+}
+
+.bicicleta-seguro-bg {
+    background-color: var(--c11);
+    box-shadow: inset 0 -80px var(--c12),
+    inset 0 80px var(--w);
+}
+
+.bicicleta-seguro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.bicicleta-seguro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bicicleta-seguro-conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media (max-width: 1000px) {
+    .bicicleta-seguro-bg {
+        box-shadow: initial;
+    }
 }
 
 @media (max-width: 800px) {
