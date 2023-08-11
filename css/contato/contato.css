@@ -1,0 +1,75 @@
+#contato .titulo-bg {
+    box-shadow: inset 0 -240px var(--c1);
+
+}
+
+.contato {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    padding: 0;
+}
+
+.contato-dados {
+    background-color: var(--c12);
+    padding: 60px;
+    border-radius: 4px 0 0 4px;
+}
+
+.contato-endereco {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 8px;
+}
+
+.contato-endereco p {
+    grid-column: 2;
+}
+
+.contato-endereco::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: url("../../img/icones/local.svg") no-repeat;
+}
+
+.contato-meios {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.contato-meios a {
+    display: block;
+    color: var(--c4);
+    text-decoration: none;
+    grid-column: 2;
+    max-width: max-content;
+    padding-left: 26px;
+}
+
+.contato-meios a:hover {
+    color: var(--w);
+}
+
+.contato-meios a:first-child {
+    background: url("../../img/icones/email.svg") no-repeat;
+    margin-bottom: 8px;
+}
+
+.contato-meios a:nth-child(3) {
+    background: url("../../img/icones/telefone.svg") no-repeat;
+    margin-top: 20px;
+}
+
+.contato-redes {
+    display: flex;
+    gap: 40px;
+    padding-left: 26px;
+}
+
+/* BG Formulário */
+
+.contato-form {
+    background-color: var(--w);    
+    border-radius: 0 4px 4px 0;
+}
