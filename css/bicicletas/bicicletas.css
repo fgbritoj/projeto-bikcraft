@@ -1,7 +1,7 @@
 .bicicletas {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 100px 40px;
+    padding: 100px 20px;
     gap: 40px;
 }
 
@@ -22,7 +22,7 @@
     border-radius: 4px 0 0 4px;
     position: absolute;
     top: 10px;
-    right: 1px;
+    right: 0px;
 }
 
 .bicicletas-conteudo {

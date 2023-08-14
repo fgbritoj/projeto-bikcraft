@@ -10,23 +10,46 @@
     flex-direction: column;
 }
 
-.form-item:nth-child(3),
-.form-item:nth-child(4){
-    grid-column: 1/-1;
+.form .col-2 {
+    grid-column: span 2;
 }
 
 .form label {
+    display: block;
     color: var(--c12);
     font: 600 1rem/1.5 "Poppins", sans-serif;
     margin-bottom: 8px;
 }
 
-.form input,
-textarea {
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="tel"],
+.form textarea {
     color: var(--c7);
     font: 400 1rem/1.5 "Roboto", sans-serif;
     background-color: var(--c1);
     border: 2px solid var(--c2);
     border-radius: 4px;
     padding: 12px;
+    max-width: 100%;
+}
+
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form input[type="tel"]:focus,
+.form textarea:focus {
+    outline: none;
+    border-color: var(--p1);
+    background: var(--w);    
+}
+
+@media (max-width: 600px) {
+    .form {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .form .col-2 {
+        grid-column: 1;
+    }
 }

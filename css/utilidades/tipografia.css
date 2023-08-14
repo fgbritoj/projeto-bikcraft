@@ -57,6 +57,10 @@
     font: 400 1rem/1.5 "Roboto", sans-serif;
 }
 
+.font-2-sb {
+    font: 500 1rem/1.5 "Roboto", sans-serif;
+}
+
 .font-2-xs {
     font: 400 0.85rem/1.45 "Roboto", sans-serif;
 }
