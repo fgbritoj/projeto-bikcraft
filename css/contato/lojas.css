@@ -22,3 +22,52 @@
 .loja img {
     border-radius: 0;
 }
+
+.loja-item-endereco h2 {
+    display: flex;
+    align-items: center;
+}
+
+.loja-item-endereco h2::before{
+    content: "";
+    display: inline-block;
+    height: 8px;
+    width: 12px;
+    background: var(--p1);
+    margin-right: 12px;
+}
+
+.loja-item-endereco > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 24px;
+}
+
+.loja-item-endereco div p {
+    padding-left: 12px;
+    border-left: 2px solid var(--c2);
+}
+
+.loja-item-endereco div + p {
+    display: flex;
+    align-items: center;
+}
+.loja-item-endereco div + p::before {
+    content: "";
+    display: inline-block;
+    background: url(../../img/icones/horario.svg) no-repeat;
+    width: 18px;
+    height: 20px;
+    padding-left: 12px;
+}
+
+@media (max-width: 1000px) {
+    .loja-mapas {
+        grid-template-columns: 1fr;
+        padding: 40px 60px;
+    }
+
+    .loja h1 {
+        margin-bottom: 0px;
+    }
+}
