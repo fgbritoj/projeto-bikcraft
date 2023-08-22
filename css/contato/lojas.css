@@ -52,6 +52,7 @@
     display: flex;
     align-items: center;
 }
+
 .loja-item-endereco div + p::before {
     content: "";
     display: inline-block;
@@ -63,11 +64,24 @@
 
 @media (max-width: 1000px) {
     .loja-mapas {
-        grid-template-columns: 1fr;
-        padding: 40px 60px;
+        padding: 20px;
     }
 
     .loja h1 {
         margin-bottom: 0px;
+    }
+
+    .loja-item-endereco > div {
+        grid-template-columns: 1fr;
+    }
+
+    .loja-bg {
+        padding: 40px 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .loja-mapas {
+        grid-template-columns: 1fr;
     }
 }
