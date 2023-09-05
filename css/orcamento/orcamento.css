@@ -48,9 +48,8 @@
 .orcamento-conteudo {
     padding: 20px;
     background-color: var(--c10);
-    margin: 20px 0;
     border-radius: 5px;
-    display: none;
+    /* display: none; */
 }
 
 #bikcraft:checked ~ #orcamento-bikcraft,
