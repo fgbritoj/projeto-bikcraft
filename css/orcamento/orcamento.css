@@ -49,7 +49,7 @@
     padding: 20px;
     background-color: var(--c10);
     border-radius: 5px;
-    /* display: none; */
+    display: none;
 }
 
 #bikcraft:checked ~ #orcamento-bikcraft,
