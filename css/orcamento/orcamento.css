@@ -78,7 +78,7 @@
 }
 
 .orcamento-produto input:checked + label span{
-    display: block;
+    display: inline-block;
 }
 
 .orcamento-produto input:checked + label::before {
