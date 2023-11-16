@@ -90,8 +90,12 @@
 /* TÍTULO */
 
 .titulo-bg {
-  background-color: var(--c11);
-  padding: 40px 0;
+  background: var(--c11);
+}
+
+.titulo {
+  background: url(../../img/dec/top-right.svg) no-repeat top 40px right 20px;
+  padding: 40px 20px;
 }
 
 @media (max-width: 800px) {

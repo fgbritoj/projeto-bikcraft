@@ -9,7 +9,7 @@
 }
 
 .contato-dados {
-    background-color: var(--c12);
+    background: var(--c12) url(../../img/dec/bottom-left.svg) no-repeat bottom 40px left 40px;
     padding: 60px;
     border-radius: 4px 0 0 4px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -67,6 +67,7 @@
     } 
     
     .contato-dados {
+        background: var(--c12);
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 0 40px;

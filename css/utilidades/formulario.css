@@ -3,6 +3,7 @@
     grid-template-columns: 1fr 1fr;
     padding: 60px;
     gap: 20px;
+    background: url(../../img/dec/bottom-right.svg) no-repeat bottom 40px right 40px;
 }
 
 .form-item {

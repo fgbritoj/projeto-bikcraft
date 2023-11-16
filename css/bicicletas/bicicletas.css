@@ -3,6 +3,7 @@
     grid-template-columns: 1fr 1fr;
     padding: 100px 20px;
     gap: 40px;
+    background: url(../../img/dec/top-right.svg) no-repeat top 40px right 40px;
 }
 
 .bicicletas-imagem {
@@ -89,5 +90,16 @@
     .bicicletas-conteudo a {
         grid-column: 1/-1;
         justify-self: end;
+    }
+}
+
+@media (max-width: 800px) {
+    .bicicletas {
+        background: url();
+        grid-template-columns: 1fr;
+    }
+
+    .bicicletas-bg:nth-child(odd) {
+        box-shadow: initial;
     }
 }
