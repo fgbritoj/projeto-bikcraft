@@ -38,18 +38,18 @@
 }
 
 /* Perguntas */
-.pergunta-resposta {
+.js .pergunta-resposta {
     display: none;
 }
 
-.mostrar {
+.js .mostrar {
     display: block;
 }
 
-.rotacionar {
+.js .rotacionar {
     transform: rotate(180deg);
 }
 
-.pergunta-item img {
+.js .pergunta-item img {
     transition:  0.3s ease;
 }

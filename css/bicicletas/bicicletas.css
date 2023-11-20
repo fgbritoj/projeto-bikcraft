@@ -95,7 +95,7 @@
 
 @media (max-width: 800px) {
     .bicicletas {
-        background: url();
+        background: initial;
         grid-template-columns: 1fr;
     }
 
