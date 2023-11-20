@@ -7,7 +7,8 @@ links.forEach(link => {
     }
 })
 
-// Seguros - Perguntas (Função para mostrar Respostas ao clique)
+
+// Seguros - Perguntas (mostrar respostas ao clique)
 const perguntas = document.querySelectorAll('.pergunta-item')
 
 perguntas.forEach(pergunta => {
@@ -18,3 +19,28 @@ perguntas.forEach(pergunta => {
         seta.classList.toggle('rotacionar')
     })
 });
+
+
+// Orçamento - Marcar Input de acordo com produto escolhido
+const produtoEscoliho = new URLSearchParams(location.search)
+
+produtoEscoliho.forEach(produto => {
+    const elemento = document.getElementById(produto)
+
+    if(elemento) {
+        elemento.checked = true
+    }
+})
+
+// Bicicletas - Galeria de Bicicletas
+const galeria = document.querySelector('.bicicleta-imagens')
+const imagens = document.querySelectorAll('.bicicleta-imagens img')
+
+imagens.forEach(imagem => {
+    imagem.addEventListener('click', () => {
+
+        if(matchMedia('(min-width: 1000px)').matches) {
+            galeria.prepend(imagem)
+        }
+    })
+})
