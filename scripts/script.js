@@ -44,3 +44,10 @@ imagens.forEach(imagem => {
         }
     })
 })
+
+// Plugin Animação
+if(window.SimpleAnime){
+    new SimpleAnime()
+}
+
+
