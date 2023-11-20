@@ -36,9 +36,11 @@
     transition: 0.3s;
 }
 
-.header-menu ul li a:hover::after {
+.header-menu a:hover::after,
+.header-menu a.ativo::after {
     width: 100%;
 }
+
 
 @media (max-width: 900px) {
     .header {
@@ -66,3 +68,4 @@
         text-align: center;
     }
 }
+

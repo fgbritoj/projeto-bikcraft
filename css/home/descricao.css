@@ -17,18 +17,17 @@
     max-width: 80ch;
 }
 
-.descricao-texto-detalhe {
-    /* position: absolute;
-    bottom: 150px;
-    left: -50%; */
-    display: none;
-}
-
 .descricao-img img {
     max-width: 596px;
     display: block;
     height: 100%;
     object-fit: cover;
+}
+
+@media (max-width: 1400px) and  (min-width: 1201px) {
+    .descricao-bg {
+        background: var(--c12);
+    }
 }
 
 @media (max-width: 1200px) {
@@ -75,3 +74,4 @@
         box-shadow: initial;
     }
 }
+
