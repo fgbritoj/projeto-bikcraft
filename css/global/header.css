@@ -41,31 +41,94 @@
     width: 100%;
 }
 
+/* Menu Hamburguer */
 
-@media (max-width: 900px) {
-    .header {
+#menu-button {
+    display: none;
+}
+
+@media (max-width: 650px) {
+    
+    #menu-button {
+        display: flex;
+        position: relative;
+        border-top: 2px solid var(--w);
+        background-color: var(--w);
+        width: 24px;
+        margin: 40px 20px 60px 0;
+        transition: 0.3s;
+    }
+    
+    #menu-button::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 24px;
+        height: 2px;
+        background-color: var(--w);
+        top: 6px;
+        transition: 0.3s;
+    }
+
+      #menu-button::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 24px;
+        height: 2px;
+        background-color: var(--w);
+        top: 14px;
+        transition: 0.3s;
+    }
+
+    #menu-button.active {
+        border: none;
+    }
+
+    #menu-button.active::before {
+        transform: rotate(135deg);
+    }
+
+    #menu-button.active::after {
+        top: 6px;
+        transform: rotate(-135deg);
+    }
+
+    .header-menu ul {
+        position: absolute;
+        display: block;
         flex-direction: column;
-        align-items: center;
+        right: 0;
+        gap: 0;
+        background-color: var(--c12);
+        width: 100vw;
+        height: 0px;
+        transition: 0.6s;
+        text-align: center;
+        z-index: 10;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    
+    .header-menu ul.active {
+        visibility: visible;
+        height: 259px;
+        overflow-y: auto;
     }
 
-    .header-menu ul li a {
-        background-color: var(--c10);
-        padding: 8px 16px;
-        border-radius: 5px;
-        margin-bottom: 20px;
+    .header-menu ul li {
+        border-bottom: 2px solid var(--c10);
     }
+    
+    .header-menu ul.active a {
+        padding: 30px 0px;
+        width: 100vw;
+    }
+    
     .header-menu ul li a::after {
         display: none;
     }
 
 }
 
-@media (max-width: 500px) {
-    .header-menu ul {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 0;
-        text-align: center;
-    }
-}
 

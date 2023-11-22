@@ -50,4 +50,12 @@ if(window.SimpleAnime){
     new SimpleAnime()
 }
 
+// Menu Hamburguer
+const menuHamburguer = document.getElementById('menu-button')
 
+menuHamburguer.addEventListener('click', () => {
+    const menu = document.querySelector('.header-menu ul')
+
+    menu.classList.toggle('active')
+    menuHamburguer.classList.toggle('active')
+})
