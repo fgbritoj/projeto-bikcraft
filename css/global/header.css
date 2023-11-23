@@ -112,7 +112,7 @@
     
     .header-menu ul.active {
         visibility: visible;
-        height: 259px;
+        height: 100vh;
         overflow-y: auto;
     }
 
@@ -128,6 +128,10 @@
     .header-menu ul li a::after {
         display: none;
     }
+
+    .no-scroll {
+        overflow: hidden;
+      }
 
 }
 

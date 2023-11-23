@@ -58,4 +58,5 @@ menuHamburguer.addEventListener('click', () => {
 
     menu.classList.toggle('active')
     menuHamburguer.classList.toggle('active')
+    document.body.classList.toggle('no-scroll')
 })
