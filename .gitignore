@@ -1,0 +1,4 @@
+*.php
+PHPMailer
+php.ini-development
+php.ini-production
